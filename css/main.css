@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+header {
+  color: #fff;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  header .navbar ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%; }
+  header .nav-link:after {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background: transparent;
+    height: 3px;
+    width: 0;
+    transition: width .6s ease, background .6s ease; }
+  header .nav-link:hover:after {
+    width: 100%;
+    background: limegreen; }
+  header .nav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: .8rem 2rem;
+    font-size: 1.1em; }
+  header .branding {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    padding: .5rem 2rem;
+    border-radius: 10px; }
+    header .branding .logo {
+      line-height: 1.2;
+      font-size: 2.6em;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff; }
+      header .branding .logo .text-secondary {
+        color: limegreen; }
+    header .branding .toggler-icon {
+      margin-right: 2rem;
+      display: none;
+      background: limegreen;
+      padding: 15px; }
+      header .branding .toggler-icon:hover {
+        cursor: pointer; }
+      header .branding .toggler-icon .line {
+        height: 3px;
+        width: 30px;
+        background: #fff; }
+        header .branding .toggler-icon .line:nth-child(2) {
+          margin: 6px 0; }
+
+.home {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  background: url("../assets/proverbs-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .home .img-description-wrapper {
+    z-index: 1;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .home .img-description-wrapper .description {
+      font-size: 1.5em; }
+
+.home-overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100%; }
+
+@media screen and (max-width: 768px) {
+  header {
+    display: block;
+    background-color: #fff;
+    color: #000;
+    position: fixed;
+    top: 0; }
+    header .branding {
+      display: flex;
+      background-color: #fff;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 0 #fff;
+      margin: 1rem 0; }
+      header .branding .toggler-icon {
+        display: block;
+        margin-right: 0; }
+      header .branding .logo {
+        color: #000;
+        font-size: 1.3em;
+        font-weight: 800; }
+    header .nav-link:hover:after {
+      width: 0; }
+    header .navbar ul {
+      margin-top: 3px;
+      display: block; }
+    header .nav-link {
+      display: inline-block;
+      color: #000;
+      width: 100%; }
+      header .nav-link:hover {
+        background: rgba(222, 222, 222, 0.2); }
+  .navbar {
+    display: none; }
+    .navbar.show {
+      display: block; }
+  .books {
+    margin-top: 9rem; }
+  .about {
+    margin-top: 9rem; }
+  .contact {
+    margin-top: 11rem; }
+    .contact .contact-box {
+      width: 80%; } }
+
+@media screen and (max-width: 600px) {
+  .books .books-wrapper .book-item-wrapper {
+    flex: 1 1 100%; }
+  .contact .contact-box {
+    font-size: 1em;
+    width: 85%; } }
