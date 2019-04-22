@@ -176,7 +176,7 @@ header .branding .toggler-icon .line:nth-child(2) {
 .about .profile-img {
   height: 250px;
   width: 250px;
-  border-radius: 5%;
+  border-radius: 10px;
   margin-bottom: 1.5rem;
 }
 .about .bio-description {
