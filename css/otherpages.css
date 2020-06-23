@@ -94,32 +94,53 @@ header .branding .toggler-icon .line:nth-child(2) {
   color: #000;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
-.books .books-wrapper {
+.book-separator {
+  height: 5px;
+  width: 70%;
+  background-color: #000;
+  margin: 1rem 0;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.books-wrapper {
+  width: 70%;
+}
+
+.book-items-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 70%;
   flex-wrap: wrap;
 }
-.books .books-wrapper .book-item-wrapper {
-  margin: 0.9rem;
+
+.book-item-wrapper {
+  margin-right: 1.8rem;
+}
+
+.books-heading {
+  margin: 1rem 0;
+  font-size: 1.8em;
+}
+
+.book-item-wrapper {
   flex: 0 1 25%;
   margin-bottom: 1.5rem;
 }
-.books .books-wrapper .book-item-wrapper .book-item {
+.book-item {
   height: 243px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.books .books-wrapper .book-item-wrapper .book-item-1 {
+.book-item-1 {
   background-image: url("../assets/title-1.jpg");
   background-size: cover;
 }
-.books .books-wrapper .book-item-wrapper .book-item-2 {
+.book-item-2 {
   background-image: url("../assets/title-2.png");
   background-size: cover;
   color: blue;
@@ -128,21 +149,27 @@ header .branding .toggler-icon .line:nth-child(2) {
   justify-content: center;
   align-items: center;
 }
-.books .books-wrapper .book-item-wrapper .book-item-3 {
+.book-item-3 {
   background-image: url("../assets/title-3.png");
   background-size: cover;
   color: blue;
   font-size: 2em;
 }
-.books .books-wrapper .book-item-wrapper .book-item-4 {
+.book-item-4 {
   background-image: url("../assets/title-4.jpg");
   background-size: cover;
 }
-.books .books-wrapper .book-item-wrapper .book-item-5 {
+.book-item-5 {
   background-image: url("../assets/title-5.jpg");
   background-size: cover;
 }
-.books .books-wrapper .book-item-wrapper .btn-save {
+
+.book-item-6 {
+  background-image: url(../assets/qasas.jpg);
+  background-size: cover;
+}
+
+.btn-save {
   display: inline-block;
   text-decoration: none;
   margin-top: 0.4rem;
@@ -155,12 +182,12 @@ header .branding .toggler-icon .line:nth-child(2) {
   transition: border 0.2s ease-out;
   width: 100%;
 }
-.books .books-wrapper .book-item-wrapper .btn-save:hover {
+.btn-save:hover {
   border: 2px solid limegreen;
 }
 
 @media screen and (max-width: 850px) {
-  .books .books-wrapper .book-item-wrapper {
+  .book-item-wrapper {
     flex: 1 1 30%;
   }
 }
@@ -255,6 +282,7 @@ header .branding .toggler-icon .line:nth-child(2) {
   .navbar.show {
     display: block;
   }
+
   .books {
     margin-top: 9rem;
   }
