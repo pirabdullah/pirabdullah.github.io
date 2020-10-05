@@ -169,6 +169,11 @@ header .branding .toggler-icon .line:nth-child(2) {
   background-size: cover;
 }
 
+.book-item-7 {
+  background-image: url(../assets/title-6.png);
+  background-size: cover;
+}
+
 .btn-save {
   display: inline-block;
   text-decoration: none;
